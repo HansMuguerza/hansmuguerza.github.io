@@ -49,6 +49,11 @@ table {
 
 /* CSS */
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     font-family: 'roboto', sans-serif;
     font-size: 0.9em;
@@ -213,9 +218,8 @@ body{
 
 /* section home */
 
-.home {
+#home {
     height: 100vh;
-    margin-top: 70px;
     display: flex;
     align-items: center;
     color: #001B69;
@@ -229,6 +233,7 @@ h1 {
     font-size: 3.1em;
     font-weight: 700;
     color: #0057ff;
+    margin-top: 4em;
     margin-bottom: 20px;
     transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
@@ -274,8 +279,8 @@ h1:hover {
 
 .box div {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background-color: transparent;
     border: 6px solid rgba(0, 87, 255, 0.8);
 }
@@ -354,7 +359,7 @@ h1:hover {
 
 /* about */
 
-.about {
+#about {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -399,6 +404,90 @@ h1:hover {
         display: block;
         cursor: pointer;
     }
+
+
+
+
+    .box div {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        border: 2px solid rgba(0, 87, 255, 0.8);
+    }
+    
+    .box div:nth-child(1) {
+        top: 12%;
+        left: 42%;
+        animation: animate 10s linear infinite;
+    }
+    
+    .box div:nth-child(2) {
+        top: 70%;
+        left: 50%;
+        animation: animate 7s linear infinite;
+    }
+    
+    .box div:nth-child(3) {
+        top: 17%;
+        left: 6%;
+        animation: animate 9s linear infinite;
+    }
+    
+    .box div:nth-child(4) {
+        top: 20%;
+        left: 60%;
+        animation: animate 10s linear infinite;
+    }
+    
+    .box div:nth-child(5) {
+        top: 67%;
+        left: 10%;
+        animation: animate 12s linear infinite;
+    }
+    
+    .box div:nth-child(6) {
+        top: 80%;
+        left: 70%;
+        animation: animate 12s linear infinite;
+    }
+    
+    .box div:nth-child(7) {
+        top: 60%;
+        left: 80%;
+        animation: animate 15s linear infinite;
+    }
+    
+    .box div:nth-child(8) {
+        top: 65%;
+        left: 30%;
+        animation: animate 16s linear infinite;
+    }
+    
+    .box div:nth-child(9) {
+        top: 90%;
+        left: 25%;
+        animation: animate 9s linear infinite;
+    }
+    
+    .box div:nth-child(10) {
+        top: 20%;
+        left: 80%;
+        animation: animate 5s linear infinite;
+    }
+    
+    @keyframes animate {
+        0% {
+            transform: scale(0) translateY(0) rotate(360deg);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.3) translateY(-90) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+
 }
 
 
