@@ -536,6 +536,16 @@ h1:hover {
         }
     }
 
+    #about {
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #001B69;
+        background-color: #0057ff;
+    }
+
 
 }
 
