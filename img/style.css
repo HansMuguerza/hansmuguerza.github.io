@@ -348,6 +348,13 @@
     display: none;
   }
 
+
+
+/* ------------------------------------------------------ */
+
+
+
+
 /* CSS */
 
 html {
@@ -683,6 +690,7 @@ h1:hover {
     background-color: #0057ff;
 }
 
+
 #about div h3 {
     color: white;
     font-size: 2em;
@@ -839,14 +847,8 @@ h1:hover {
         }
     }
 
-    #about {
-        height: 100vh;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #001B69;
-        background-color: #0057ff;
+    .about-container {
+        margin: 2em;
     }
 
 
