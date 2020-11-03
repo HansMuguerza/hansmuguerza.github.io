@@ -685,6 +685,8 @@ h1:hover {
 
 #about {
     height: 100vh;
+    min-height: 600px;
+    padding: 3em 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -701,8 +703,6 @@ h1:hover {
 }
 
 .about-container {
-    margin: 3em;
-    min-height: 720px;
 }
 
 #about .smile-icon {
