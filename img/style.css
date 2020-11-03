@@ -743,6 +743,26 @@ h1:hover {
     background-color: #0057ff;
 }
 
+
+
+
+
+
+
+
+/* about */
+
+#projects {
+    height: 100vh;
+    padding: 3em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+
 /* responsives */
 
 
