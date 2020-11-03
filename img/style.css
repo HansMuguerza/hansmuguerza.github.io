@@ -685,7 +685,6 @@ h1:hover {
 
 #about {
     height: 100vh;
-    min-height: 600px;
     padding: 3em 0;
     text-align: center;
     display: flex;
@@ -699,7 +698,7 @@ h1:hover {
     color: white;
     font-size: 2em;
     font-weight: 500;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .about-container {
@@ -863,10 +862,17 @@ h1:hover {
         }
     }
 
-    .about-container {
-        margin: 2em;
+    
+    #about {
+        height: 100vh;
+        min-height: 700px;
+        padding: 3em 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #001b69;
     }
-
 
 }
 
