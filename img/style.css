@@ -865,7 +865,7 @@ h1:hover {
     
     #about {
         height: 100vh;
-        min-height: 700px;
+        min-height: 750px;
         padding: 3em 0;
         text-align: center;
         display: flex;
