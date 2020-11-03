@@ -702,6 +702,7 @@ h1:hover {
 
 .about-container {
     margin: 3em;
+    min-height: 720px;
 }
 
 #about .smile-icon {
