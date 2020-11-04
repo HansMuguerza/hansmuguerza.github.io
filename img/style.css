@@ -743,6 +743,7 @@ h1:hover {
 
 #abilities {
     height: auto;
+    padding: 7em 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -769,42 +770,75 @@ h1:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-flow: wrap;
+    align-content: center;
 }
 
 #abilities .abilities-container .box1 {
     background: var(--white);
     width: 200px;
     height: 200px;
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px;
+    margin: 10px;
 }
 
 #abilities .abilities-container .box2 {
     background: var(--white);
     width: 200px;
     height: 200px;
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px;
+    margin: 10px;
 }
 
 #abilities .abilities-container .box3 {
     background: var(--white);
     width: 200px;
     height: 200px;
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px;
+    margin: 10px;
 }
 
+#abilities .abilities-container .box4 {
+    background: var(--white);
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: left;
+    padding: 10px 30px;
+    margin: 10px;
+}
 
+#abilities .abilities-container .box5 {
+    background: var(--white);
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: left;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+#abilities .abilities-container .box6 {
+    background: var(--white);
+    width: 200px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: left;
+    padding: 10px 30px;
+    margin: 10px;
+}
 
 
 /* about */
