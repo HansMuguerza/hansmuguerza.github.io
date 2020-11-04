@@ -691,8 +691,8 @@ h1:hover {
 /* about */
 
 #about {
-    height: 100vh;
-    padding: 3em 0;
+    height: auto;
+    padding: 7em 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -742,7 +742,7 @@ h1:hover {
 /* abilities */
 
 #abilities {
-    height: 100vh;
+    height: auto;
     text-align: center;
     display: flex;
     align-items: center;
@@ -766,15 +766,17 @@ h1:hover {
 #abilities .abilities-container .box-container {
     width: 100%;
     border: 1px solid tomato;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-
 
 #abilities .abilities-container .box1 {
     background: var(--white);
     width: 200px;
     height: 200px;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 150px;
+    min-height: 150px;
     text-align: left;
     padding: 10px 30px;
     margin: 20px;
@@ -784,8 +786,8 @@ h1:hover {
     background: var(--white);
     width: 200px;
     height: 200px;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 150px;
+    min-height: 150px;
     text-align: left;
     padding: 10px 30px;
     margin: 20px;
@@ -795,8 +797,8 @@ h1:hover {
     background: var(--white);
     width: 200px;
     height: 200px;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 150px;
+    min-height: 150px;
     text-align: left;
     padding: 10px 30px;
     margin: 20px;
