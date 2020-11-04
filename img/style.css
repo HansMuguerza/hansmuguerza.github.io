@@ -403,7 +403,7 @@ body{
     width: 22px;
     position: relative;
     right: 25px;
-} 
+}
 
 .menu-icon{
     display: none;
@@ -538,6 +538,7 @@ body{
 #home {
     height: 100vh;
     display: flex;
+    padding: 7em 0;
     align-items: center;
     color: var(--color-secondary);
     background-color: #F6F9FF;
