@@ -767,7 +767,7 @@ h1:hover {
 
 #abilities .abilities-container .box-container {
     width: 100%;
-    padding: 0;
+    padding:  5
     border: 1px solid tomato;
     display: flex;
     flex-direction: row;
@@ -784,7 +784,7 @@ h1:hover {
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px 10px;
+    margin: 20px 50px;
 }
 
 #abilities .abilities-container .box2 {
@@ -795,7 +795,7 @@ h1:hover {
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px 10px;
+    margin: 20px 50px;
 }
 
 #abilities .abilities-container .box3 {
@@ -806,7 +806,7 @@ h1:hover {
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px 10px;
+    margin: 20px 50px;
 }
 
 #abilities .abilities-container .box4 {
@@ -817,7 +817,7 @@ h1:hover {
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px 10px;
+    margin: 20px 50px;
 }
 
 #abilities .abilities-container .box5 {
@@ -828,7 +828,7 @@ h1:hover {
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px 10px;
+    margin: 20px 50px;
 }
 
 #abilities .abilities-container .box6 {
@@ -839,7 +839,7 @@ h1:hover {
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 20px 10px;
+    margin: 20px 50px;
 }
 
 
