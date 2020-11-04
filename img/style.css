@@ -749,6 +749,7 @@ h1:hover {
     align-items: center;
     justify-content: center;
     background-color: #0057ff;
+    color: white;
 }
 
 #abilities h3 {
@@ -766,78 +767,79 @@ h1:hover {
 
 #abilities .abilities-container .box-container {
     width: 100%;
+    padding: 0;
     border: 1px solid tomato;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: wrap;
     align-content: center;
 }
 
 #abilities .abilities-container .box1 {
     background: var(--white);
-    width: 200px;
+    width: 150px;
     height: 200px;
     min-width: 100px;
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 #abilities .abilities-container .box2 {
     background: var(--white);
-    width: 200px;
+    width: 150px;
     height: 200px;
     min-width: 100px;
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 #abilities .abilities-container .box3 {
     background: var(--white);
-    width: 200px;
+    width: 150px;
     height: 200px;
     min-width: 100px;
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 #abilities .abilities-container .box4 {
     background: var(--white);
-    width: 200px;
+    width: 150px;
     height: 200px;
     min-width: 100px;
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 #abilities .abilities-container .box5 {
     background: var(--white);
-    width: 200px;
+    width: 150px;
     height: 200px;
     min-width: 100px;
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 #abilities .abilities-container .box6 {
     background: var(--white);
-    width: 200px;
+    width: 150px;
     height: 200px;
     min-width: 100px;
     min-height: 100px;
     text-align: left;
     padding: 10px 30px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 
