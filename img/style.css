@@ -776,7 +776,6 @@ h1:hover {
 }
 
 #abilities .abilities-container .box-container .fila-1 {
-    border: 1px solid wheat;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -784,7 +783,6 @@ h1:hover {
 }
 
 #abilities .abilities-container .box-container .fila-2 {
-    border: 1px solid wheat;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
