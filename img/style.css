@@ -875,6 +875,45 @@ h1:hover {
     background-color: white;
 }
 
+#projects h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+#projects .check-icon {
+    color: #F4C8FF;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/* #projects .abilities-container .box-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    align-content: center;
+} */
+
+.content-projects ul li{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    align-content: center;
+}
+
+.content-projects ul li img {
+    width: 300px;
+}
+
+
 
 /* responsives */
 
