@@ -842,7 +842,8 @@ h1:hover {
 #projects .projects-box {
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
 #projects .projects-box img {
