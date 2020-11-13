@@ -794,16 +794,22 @@ h1:hover {
     flex-flow: wrap;
 }
 
-#abilities .abilities-container .box {
-    background: var(--white);
-    width: 150px;
-    height: 200px;
-    min-width: 100px;
-    min-height: 100px;
-    text-align: left;
-    padding: 10px 30px;
-    margin: 20px 20px;
-    box-shadow: 5px 5px 10px 0.5px rgba(0, 0, 0, 0.1);
+.grid-container {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.box {
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .0945);
 }
 
 /* projects */
@@ -835,19 +841,28 @@ h1:hover {
     color: var(--color-secondary);
 }
 
-#projects .project {
-
+.item-img {
+    max-width: 100%;
+    display: block;
 }
 
-#projects .projects-box {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-
+.item {
+    background: var(--white);
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .0945);
 }
 
-#projects .projects-box img {
-    width: 250px;
+.project-box {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 
 /* responsives */
@@ -951,13 +966,13 @@ h1:hover {
         left: 25%;
         animation: animate 9s linear infinite;
     }
-    
+
     .box div:nth-child(10) {
         top: 20%;
         left: 80%;
         animation: animate 5s linear infinite;
     }
-    
+
     @keyframes animate {
         0% {
             transform: scale(0) translateY(0) rotate(360deg);
@@ -969,7 +984,6 @@ h1:hover {
         }
     }
 
-    
     #about {
         height: 100vh;
         min-height: 750px;
@@ -981,9 +995,33 @@ h1:hover {
         background-color: #001b69;
     }
 
-    .content-projects ul li img {
-        width: 308px;
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-box {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 
+
+@media only screen and (max-width: 590px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .project-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
