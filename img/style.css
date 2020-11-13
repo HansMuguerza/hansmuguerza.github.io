@@ -381,7 +381,7 @@ body{
 
 
 .header {
-    background-color: #F6F9FF;
+    background-color: var(--white);
     padding: 0.3rem 0;
     position: fixed;
     left: 0;
@@ -539,7 +539,7 @@ body{
     display: flex;
     align-items: center;
     color: var(--color-secondary);
-    background-color: #F6F9FF;
+    background-color: var(--white);
 }
 
 .home-container {
@@ -821,7 +821,7 @@ h1:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--white);
 }
 
 #projects h3 {
@@ -850,6 +850,30 @@ h1:hover {
     background: var(--white);
     cursor: pointer;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .0945);
+
+    transition: all 200ms;
+}
+
+.item::after {
+    content: "";
+    background-color: rgba(179, 299, 252, .1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 200ms;
+    opacity: 0;
+}
+
+.item:hover:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.item:hover {
+    transform: scale(1.025);
 }
 
 .project-box {
