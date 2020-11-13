@@ -1025,3 +1025,7 @@ h1:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+#socialmedia .sm-container img {
+    width: 1400px;
+}
