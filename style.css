@@ -363,6 +363,7 @@ html {
 
 :root {
     --fondo: #1A2A48;
+    --fondo2: #182742;
     --white: #FFFFFF;
     --turquesa: #B5FFFF;
     --azul: #98B7FF;
@@ -390,7 +391,7 @@ body{
     left: 0;
     top: 0;
     right: 0;
-    z-index: 1000 !important;
+    z-index: 10000 !important;
 }
 
 .logo-nav-container{
@@ -545,6 +546,7 @@ body{
     align-items: center;
     color: var(--turquesa);
     background-color: var(--fondo);
+    z-index: 2000;
 }
 
 .home-container {
@@ -596,7 +598,7 @@ h2 {
     color: var(--white);
     font-family: 'roboto slab';
     font-size: 27px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 22px;
 }
 
@@ -636,8 +638,10 @@ h1:hover {
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     bottom: 2.5em;
+    z-index: 1000;
 }
 
 .content-abilities {
@@ -651,6 +655,7 @@ h1:hover {
     width: 200px;
     height: 225px;
     background-color: #243453;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .0945);
     border-radius: 3px;
 
     display: flex;
@@ -706,6 +711,10 @@ h1:hover {
     color: var(--amarillo);
 }
 
+.box1 .animate__animated .animate__bounce {
+    --animate-duration: 10s;
+}
+
 .box4:hover {
     color: var(--fondo);
     background-color: var(--amarillo);
@@ -715,19 +724,42 @@ h1:hover {
 /* projects */
 
 #projects {
-    height: auto;
+    height: 1000px;
     display: flex;
-    align-items: center;
     position: relative;
-    bottom: 2.5em;
-    background-color: var(--azul);
+    padding-top: 300px;
+    bottom: 225px;
+    background-color: var(--fondo2);
+    z-index: 0;
 }
 
+.projects-container {
+    text-align: center;
+}
 
+.projects-container p {
+    color: var(--turquesa);
+}
 
+.projects-container i {
+    color: var(--turquesa);
+    font-size: 1.7em;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
 
+.grid-projects {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
 
-/* projects */
+.grid-projects img {
+    width: 300px;
+}
+
+/* projects
 
 #projects {
     height: auto;
@@ -805,9 +837,11 @@ h1:hover {
     grid-gap: 20px;
 }
 
+
+*/
+
+
 /* responsives */
-
-
 @media only screen and (max-width: 767px) {
     .navigation {
         width: 100%;
@@ -833,11 +867,11 @@ h1:hover {
     }
 
     .navigation ul li a:hover {
-        border: 1px solid #0057ff;
+        border: 1px solid --turquesa;
     }
 
     .menu-icon {
-        color: #001b69;
+        color: var(--turquesa);
         display: block;
         cursor: pointer;
     }
@@ -866,11 +900,17 @@ h1:hover {
         background-color: #001b69;
     }
 
-    .grid-container {
+    .home-container {
         grid-template-columns: repeat(1, 1fr);
+        min-height: 780px;
     }
 
-    .project-box {
+    .content-abilities {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .grid-projects {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -895,8 +935,4 @@ h1:hover {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-#socialmedia .sm-container img {
-    width: 1400px;
 }
