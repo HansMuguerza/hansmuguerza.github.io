@@ -375,6 +375,7 @@ html {
 body{
     font-family: 'roboto', sans-serif;
     font-size: 14px;
+    background-color: var(--fondo);
 }
 
 .container {
@@ -550,7 +551,7 @@ body{
 }
 
 .home-container {
-    margin-top: 5px;
+    margin-top: 100px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -562,6 +563,7 @@ body{
     width: 650px;
     bottom: 0em;
     left: 30vh;
+    display: none;
 }
 
 h1 {
@@ -614,6 +616,10 @@ h5 {
     font-size: 1em;
     font-family: 'Roboto slab';
     font-weight: 300;
+}
+
+.parttwo {
+    margin-bottom: 100px;
 }
 
 .parttwo p {
@@ -917,6 +923,7 @@ h1:hover {
 
 
 
+
 @media only screen and (max-width: 590px) {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
@@ -934,5 +941,124 @@ h1:hover {
 
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+nav {
+	position: fixed;
+	z-index: 10000;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	background-color: var(--fondo);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo-nav {
+	float: left;
+    width: 50px;
+    padding: 15px 0;
+	display: flex;
+	align-items: center;
+}
+
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em 0;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+    text-decoration: none;
+    padding: 0 40px;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+    transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 20px;
+	height: 3px;
+	background-color: #fff;
+	margin: 5px 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	nav .logo {
+
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 90px;
+		bottom: 100%;
+		flex-direction: column;
+		background-color: var(--fondo2);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+        display: block;
+        width: 55px;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+
+    #home {
+        margin-top: 200px;
+    }
+
+    #abilities {
+        margin-top: 100px;
     }
 }
