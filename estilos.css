@@ -416,18 +416,17 @@ nav .icon-burger .line {
 
 }
 
-
 .parttwo h2 {
     color: var(--white);
     font-family: 'Roboto slab';
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     margin-bottom: 25px;
 }
 
-h3 {
+.parttwo h3 {
     color: var(--turquesa);
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: 'Roboto';
 	font-weight: 400;
 	margin-bottom: 8px;
