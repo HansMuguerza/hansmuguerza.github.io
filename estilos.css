@@ -123,6 +123,15 @@ header .categorias a.activo {
 	font-weight: 500;
 }
 
+nav {
+	transition: .5s;
+}
+
+nav.hide {
+	transform: translateY(-100%);
+}
+
+
 /* ------------------------- */
 /* Grid */
 /* ------------------------- */
@@ -155,11 +164,21 @@ header .categorias a.activo {
 	cursor: pointer;
 	vertical-align: top;
 	border-radius: 5px;
+	opacity: .9;
+	transition-duration: .25s;
+	transition-property: opacity;
 }
+
+.grid .item img:hover {
+	opacity: 1;
+}
+
 
 /* ------------------------- */
 /* Overlay */
 /* ------------------------- */
+
+
 .overlay {
 	position: fixed;
 	top: 0;

@@ -59,3 +59,33 @@ function copy(text) {
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
 }
+
+/* var lastScrollTop = 0;
+	navbar = document.getElementById("header");
+window.addEventListener("scroll", function(){
+	var scrollTop = window.pageYOffset || document
+		.documentElement.scrollTop;
+	if (scrollTop > lastScrollTop){
+		navbar.style.top="-80px"
+	}else{
+		navbar.style.top="0"
+	}
+	lastScrollTop = scrollTop;
+}) */
+
+
+
+const nav = document.getElementById('header');
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener('scroll', ()=>{
+	let currentScrollPos = window.pageYOffset;
+
+	if(prevScrollpos < currentScrollPos){
+		nav.classList.add('hide');
+	}else{
+		nav.classList.remove('hide');
+	}
+
+	prevScrollpos = currentScrollPos;
+})
