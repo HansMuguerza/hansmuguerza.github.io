@@ -196,11 +196,11 @@ nav.hide {
 
 .overlay.activo {
 	display: flex;
-	margin-top: 40px;
+	padding-top: 40px;
 }
 
 .overlay.activo img {
-	width: 400px;
+	width: 500px;
 	border-radius: 5px;
 }
 
@@ -434,6 +434,12 @@ nav .icon-burger .line {
 		opacity: 0;
 	}
 
+	.overlay.activo img {
+		width: 350px;
+		border-radius: 5px;
+	}
+	
+
 }
 
 .parttwo h2 {
@@ -495,6 +501,8 @@ nav .icon-burger .line {
 	background-color: transparent;
 	padding: 10px 20px;
 	transition: cubic-bezier(1, -0.28, 0.735, 1);
+	outline: none;
+	cursor: pointer;
 }
 
 #correo button:hover {

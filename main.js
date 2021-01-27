@@ -60,21 +60,6 @@ function copy(text) {
 	document.body.removeChild(textarea);
 }
 
-/* var lastScrollTop = 0;
-	navbar = document.getElementById("header");
-window.addEventListener("scroll", function(){
-	var scrollTop = window.pageYOffset || document
-		.documentElement.scrollTop;
-	if (scrollTop > lastScrollTop){
-		navbar.style.top="-80px"
-	}else{
-		navbar.style.top="0"
-	}
-	lastScrollTop = scrollTop;
-}) */
-
-
-
 const nav = document.getElementById('header');
 let prevScrollpos = window.pageYOffset;
 
