@@ -566,3 +566,10 @@ BUTTON THREE
 	opacity: 1;
 	transform: scale(1,1);
 }
+
+.click {
+	text-align: center;
+	color: var(--turquesa);
+	margin-bottom: 15px;
+	font-size: 12px;
+}
